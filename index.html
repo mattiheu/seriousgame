@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serious Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="allPage">
+      <div class="container">
+        <center>
+        <h2 class="title">Serious Game</h2>
+        <img src="logo.png" width=20%>
+      </center>
+      <br><br>
+        <textarea
+          name=""
+          id="myInput"
+          cols="30"
+          rows="10"
+          placeholder="Entrez les noms séparés par une virgule (,)"
+        ></textarea
+        ><br />
+        <input type="number" placeholder="Nombre de joueurs par équipe" id="numberTeam" />
+        <br />
+        <button
+          type="button"
+          id="buttons"
+          onclick="getInputValue()"
+          value="Submit"
+        >
+          Découvrir les équipes ! 
+        </button>
+      </div>
+      <div class="hidden teams">
+        <h2 class="hidden">Liste des équipes</h2>
+        <div id="output" class="output"></div>
+        <button id="reset" class="hidden">Recommencer</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
